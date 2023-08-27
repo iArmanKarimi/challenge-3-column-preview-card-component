@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html {
+		@apply font-normal font-sans-serif text-[15px];
+	}
+	h1 {
+		@apply font-cursive text-card-header;
+	}
+}
