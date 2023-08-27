@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html {
+		@apply font-normal font-sans-serif text-[15px];
+	}
+	h1 {
+		@apply font-cursive text-card-header;
+	}
+}
+
+/* card - car */
+@layer components {
+	section.car {
+		@apply p-[50px] space-y-2;
+	}
+	section.car > article {
+		@apply pb-4;
+	}
+	section.car > article > h1 {
+		@apply py-5;
+	}
+	section.car > article > p {
+		@apply text-neutral-transparent-white leading-[1.75rem];
+	}
+}
+
+@layer components {
+	button.btn-white {
+		@apply bg-white 
+		border-white 
+		h-12 w-[145px]
+		rounded-full border-2
+		hover:bg-transparent
+		hover:text-white;
+	}
+}
