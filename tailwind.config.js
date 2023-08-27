@@ -11,7 +11,7 @@ module.exports = {
 		},
 		fontSize: {
 			"card-header": [
-				"1.5rem",
+				"2.6rem",
 				{
 					fontWeight: "700",
 				},
