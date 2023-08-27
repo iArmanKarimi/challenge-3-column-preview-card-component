@@ -31,7 +31,6 @@
 	button.btn-white {
 		@apply bg-white 
 		border-white 
-		text-primary-light-orange
 		h-12 w-[145px]
 		rounded-full border-2
 		hover:bg-transparent
