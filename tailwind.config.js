@@ -3,7 +3,7 @@ module.exports = {
 	content: ["./*.{html,js}"],
 	theme: {
 		screens: {
-			sm: "376px",
+			sm: "768px", // increased to tablet view
 		},
 		fontFamily: {
 			"sans-serif": ["Lexend Deca", "sans-serif"],
