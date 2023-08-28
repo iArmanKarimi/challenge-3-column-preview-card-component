@@ -20,8 +20,9 @@
 	div.car {
 		@apply sm:grid
 		sm:rounded-lg
-		sm:grid-rows-1
-		sm:grid-flow-col;
+		sm:grid-flow-col
+		sm:grid-rows-[530px]
+		sm:grid-cols-[repeat(3,325px)];
 	}
 	section.car:first-child {
 		@apply rounded-t-lg 
@@ -37,7 +38,7 @@
 		@apply p-[50px] space-y-2;
 	}
 	section.car > article {
-		@apply pb-4;
+		@apply pb-4 sm:pb-24;
 	}
 	section.car > article > h1 {
 		@apply py-5;
