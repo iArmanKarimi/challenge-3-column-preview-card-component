@@ -4,7 +4,11 @@
 
 @layer base {
 	html {
-		@apply font-normal font-sans-serif text-[15px];
+		@apply font-normal font-sans-serif text-[15px]
+		sm:h-full
+		sm:flex
+		sm:items-center
+		sm:justify-center;
 	}
 	h1 {
 		@apply font-cursive text-card-header;
@@ -13,17 +17,35 @@
 
 /* card - car */
 @layer components {
+	div.car {
+		@apply sm:grid
+		sm:rounded-lg
+		sm:grid-flow-col
+		sm:grid-rows-[530px]
+		sm:grid-cols-[repeat(3,minmax(min-content,325px))];
+	}
+	section.car:first-child {
+		@apply rounded-t-lg 
+		sm:rounded-tr-none 
+		sm:rounded-l-lg;
+	}
+	section.car:last-child {
+		@apply rounded-b-lg 
+		sm:rounded-bl-none 
+		sm:rounded-tr-lg;
+	}
 	section.car {
 		@apply p-[50px] space-y-2;
 	}
 	section.car > article {
-		@apply pb-4;
+		@apply pb-4 sm:pb-24;
 	}
 	section.car > article > h1 {
 		@apply py-5;
 	}
 	section.car > article > p {
-		@apply text-neutral-transparent-white leading-[1.75rem];
+		@apply text-neutral-transparent-white 
+		leading-[1.75rem];
 	}
 }
 

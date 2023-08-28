@@ -440,6 +440,15 @@ html {
   font-weight: 400;
 }
 
+@media (min-width: 768px) {
+  html {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 h1 {
   font-family: Big Shoulders Display, cursive;
   font-size: 2.6rem;
@@ -546,6 +555,41 @@ h1 {
   --tw-backdrop-sepia:  ;
 }
 
+@media (min-width: 768px) {
+  div.car {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3,minmax(min-content,325px));
+    grid-template-rows: 530px;
+    border-radius: 0.5rem;
+  }
+}
+
+section.car:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  section.car:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0px;
+  }
+}
+
+section.car:last-child {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  section.car:last-child {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0.5rem;
+  }
+}
+
 section.car > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -558,6 +602,12 @@ section.car {
 
 section.car > article {
   padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  section.car > article {
+    padding-bottom: 6rem;
+  }
 }
 
 section.car > article > h1 {
