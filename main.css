@@ -22,7 +22,7 @@
 		sm:rounded-lg
 		sm:grid-flow-col
 		sm:grid-rows-[530px]
-		sm:grid-cols-[repeat(3,325px)];
+		sm:grid-cols-[repeat(3,minmax(min-content,325px))];
 	}
 	section.car:first-child {
 		@apply rounded-t-lg 

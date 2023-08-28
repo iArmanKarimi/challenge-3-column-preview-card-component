@@ -559,7 +559,7 @@ h1 {
   div.car {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(3,325px);
+    grid-template-columns: repeat(3,minmax(min-content,325px));
     grid-template-rows: 530px;
     border-radius: 0.5rem;
   }
